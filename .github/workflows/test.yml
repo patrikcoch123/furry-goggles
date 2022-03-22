@@ -42,7 +42,7 @@ jobs:
         run: echo "day_of_year=$(date +%j)" >> $GITHUB_ENV
 
       - name: Set up cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             ${{ env.pythonLocation }}
@@ -98,7 +98,7 @@ jobs:
 
       - name: Set up cache
         if: "!startsWith(matrix.os, 'windows')"
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             ${{ env.pythonLocation }}
