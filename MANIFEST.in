@@ -1,0 +1,12 @@
+# global-exclude *.py[codi] __pycache__
+
+# graft pyload/lib
+
+include *.md *.rst LICENSE VERSION
+
+prune docs/build
+
+recursive-include docs *.py *.rst
+recursive-include requirements *.txt
+recursive-include pyload *.ico *.mo *.pot *.py
+recursive-include tests *.org *.py *.sh *.txt

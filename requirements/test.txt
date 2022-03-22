@@ -1,0 +1,7 @@
+future
+nose
+pycurl
+requests>=1.2.2
+setuptools>=0.6.39
+unittest2
+websocket-client>=0.8
